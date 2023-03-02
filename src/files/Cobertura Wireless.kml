@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Cobertura Wireless</name>
+	<open>1</open>
+	<StyleMap id="poly-0288D1-1200-76">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-0288D1-1200-76-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-0288D1-1200-76-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-0288D1-1200-76-highlight">
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4cd18802</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-0288D1-1200-76-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-0288D1-1200-76-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-0288D1-1200-76-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-0288D1-1200-76-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4cd18802</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-0288D1-1200-76-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4cd18802</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-0288D1-1200-76-normal">
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4cd18802</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>COBERTURA TECNET</name>
+		<Placemark>
+			<name>CHACRAS DE CORIA</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.87419199999999,-33.005389,0 -68.871961,-32.994987,0 -68.877411,-32.994519,0 -68.886959,-32.993493,0 -68.888215,-32.996094,0 -68.888268,-32.998802,0 -68.88779599999999,-33.002689,0 -68.886273,-33.008322,0 -68.885779,-33.013792,0 -68.88140199999999,-33.013126,0 -68.88002899999999,-33.012802,0 -68.87419199999999,-33.005389,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDRIEL 1</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.942792,-33.07082,0 -68.936098,-33.080746,0 -68.925111,-33.083766,0 -68.91292300000001,-33.079163,0 -68.91215099999999,-33.067871,0 -68.91979000000001,-33.06298,0 -68.92925200000001,-33.058196,0 -68.934113,-33.056956,0 -68.940561,-33.059096,0 -68.94219200000001,-33.06841,0 -68.942792,-33.07082,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PERDRIEL 2</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.91204399999999,-33.06788,0 -68.908911,-33.068726,0 -68.908546,-33.066064,0 -68.903278,-33.067026,0 -68.89595,-33.067089,0 -68.895822,-33.066154,0 -68.91191499999999,-33.064715,0 -68.91204399999999,-33.06788,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>LUJAN CENTRO</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.88080100000001,-33.0413649,0 -68.88118799999999,-33.041113,0 -68.875694,-33.040789,0 -68.873377,-33.034889,0 -68.87144600000001,-33.027693,0 -68.87213199999999,-33.02629,0 -68.87657400000001,-33.022404,0 -68.88299000000001,-33.023915,0 -68.884406,-33.023771,0 -68.885479,-33.033881,0 -68.885822,-33.040177,0 -68.885822,-33.041652,0 -68.890457,-33.042444,0 -68.89466299999999,-33.043091,0 -68.8889551,-33.0423176,0 -68.8853079,-33.0421916,0 -68.88414899999999,-33.0416343,0 -68.8825609,-33.0412656,0 -68.88208849999999,-33.0413645,0 -68.88153079999999,-33.0409683,0 -68.88080100000001,-33.0413649,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>LA CRUCESITA</name>
+			<description>planes minimo 2mb con telefonia</description>
+			<styleUrl>#poly-0288D1-1200-76</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-69.025211,-33.005973,0 -69.028559,-33.002509,0 -69.03615499999999,-33.000134,0 -69.0377,-33.001502,0 -69.029331,-33.01435,0 -69.024096,-33.014565,0 -69.022036,-33.012334,0 -69.025211,-33.005973,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>LUJAN</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.87556600000001,-33.040759,0 -68.872004,-33.039968,0 -68.86689699999999,-33.040543,0 -68.86537300000001,-33.034481,0 -68.862433,-33.028383,0 -68.85990099999999,-33.023813,0 -68.86595199999999,-33.023328,0 -68.869257,-33.02277,0 -68.871317,-33.027663,0 -68.87181,-33.029714,0 -68.872518,-33.031495,0 -68.873248,-33.034859,0 -68.87556600000001,-33.040759,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>BLANCO ENCALADA</name>
+			<description>planes minimo 2mb</description>
+			<styleUrl>#poly-0288D1-1200-76</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-69.0293953,-33.0137384,0 -69.0175943,-33.0300024,0 -69.0148904,-33.0348594,0 -69.0138602,-33.0347875,0 -69.012315,-33.0351287,0 -69.0106201,-33.0352012,0 -69.0038177,-33.0369276,0 -68.9994408,-33.0365499,0 -68.9938621,-33.0348594,0 -68.9899564,-33.0343732,0 -68.9913294,-33.0282391,0 -68.9909435,-33.0271594,0 -68.9972525,-33.0250364,0 -69.02210030000001,-33.0117224,0 -69.02416030000001,-33.0139534,0 -69.0293953,-33.0137384,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>VISTALBA</name>
+			<description>2mb en adelante</description>
+			<styleUrl>#poly-0288D1-1200-76</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.92303,-33.035309,0 -68.925927,-33.035129,0 -68.928652,-33.034328,0 -68.930283,-33.034086,0 -68.9329,-33.033258,0 -68.933764,-33.03503,0 -68.939949,-33.033384,0 -68.941349,-33.036019,0 -68.942404,-33.035673,0 -68.943372,-33.037234,0 -68.944895,-33.036694,0 -68.94607499999999,-33.038421,0 -68.936548,-33.04182,0 -68.930111,-33.042279,0 -68.927622,-33.045148,0 -68.92495,-33.045031,0 -68.92303,-33.035309,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>AGRELO</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.880162,-33.102187,0 -68.886466,-33.101069,0 -68.888502,-33.101734,0 -68.889166,-33.113616,0 -68.898392,-33.100134,0 -68.901095,-33.12727,0 -68.889358,-33.11627,0 -68.88941199999999,-33.122703,0 -68.889895,-33.129136,0 -68.890068,-33.133662,0 -68.879818,-33.134235,0 -68.880162,-33.102187,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>VERIFICAR SEGUN ALTURA DEL CLIENTE</name>
+			<description>plan minimo 2mb</description>
+			<styleUrl>#poly-0288D1-1200-76</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.91397499999999,-33.035543,0 -68.91818000000001,-33.035561,0 -68.91854499999999,-33.044195,0 -68.91452700000001,-33.043453,0 -68.909549,-33.042877,0 -68.905907,-33.037845,0 -68.91397499999999,-33.035543,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>DRUMMOND</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.87341000000001,-33.022206,0 -68.85990099999999,-33.023813,0 -68.857446,-33.01886,0 -68.856587,-33.014973,0 -68.870363,-33.014074,0 -68.87341000000001,-33.022206,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PIM</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.965368,-33.071745,0 -68.985968,-33.072932,0 -68.985624,-33.087639,0 -68.966398,-33.090551,0 -68.965368,-33.071745,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lunlunta 2</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.828506,-33.027182,0 -68.842119,-33.025599,0 -68.849828,-33.036608,0 -68.854276,-33.040493,0 -68.845178,-33.0458,0 -68.82247599999999,-33.046591,0 -68.820266,-33.037579,0 -68.831059,-33.035547,0 -68.828506,-33.027182,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polígono 15</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.85327100000001,-32.967525,0 -68.85439700000001,-32.972205,0 -68.859652,-32.982317,0 -68.849524,-32.984531,0 -68.843687,-32.985593,0 -68.837722,-32.986907,0 -68.834439,-32.987393,0 -68.82383900000001,-32.960715,0 -68.852249,-32.958879,0 -68.85327100000001,-32.967525,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>PO</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-69.20846299999999,-32.958734,0 -69.215163,-32.959229,0 -69.219632,-32.961668,0 -69.21324300000001,-32.962884,0 -69.20809800000001,-32.963667,0 -69.202348,-32.965166,0 -69.196833,-32.966844,0 -69.19722400000001,-32.973524,0 -69.19289499999999,-32.977323,0 -69.183271,-32.971326,0 -69.176008,-32.964267,0 -69.154422,-32.972812,0 -69.145179,-32.978226,0 -69.140343,-32.97078,0 -69.151208,-32.967804,0 -69.152888,-32.959283,0 -69.14478800000001,-32.948633,0 -69.158038,-32.937072,0 -69.164022,-32.93621,0 -69.169749,-32.936428,0 -69.17141700000001,-32.928797,0 -69.17767600000001,-32.93759,0 -69.188744,-32.94242,0 -69.19392000000001,-32.939071,0 -69.20012699999999,-32.93673,0 -69.199108,-32.954953,0 -69.19940800000001,-32.958023,0 -69.20076,-32.958005,0 -69.20846299999999,-32.958734,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polígono 18</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-69.167748,-32.985407,0 -69.168434,-32.989205,0 -69.163714,-32.993686,0 -69.15337100000001,-32.99176,0 -69.158478,-32.987585,0 -69.167748,-32.985407,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polígono 19</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-69.20921300000001,-32.964025,0 -69.209385,-32.963503,0 -69.21975999999999,-32.96165,0 -69.21529200000001,-32.959211,0 -69.21552200000001,-32.958282,0 -69.223204,-32.960226,0 -69.22325720000001,-32.9630349,0 -69.22126179999999,-32.9641786,0 -69.20921300000001,-32.964025,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>ZONA TURBO</name>
+		<Placemark>
+			<name>VISTALBA2</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.885954,-33.041907,0 -68.885396,-33.032769,0 -68.88453800000001,-33.024026,0 -68.88273599999999,-33.022263,0 -68.88479599999999,-33.021687,0 -68.889602,-33.021795,0 -68.893604,-33.022236,0 -68.908914,-33.023702,0 -68.908828,-33.024854,0 -68.90857099999999,-33.03169,0 -68.911317,-33.035935,0 -68.912583,-33.035971,0 -68.906167,-33.03813,0 -68.90980999999999,-33.043162,0 -68.894795,-33.043346,0 -68.885954,-33.041907,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Perdriel3</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-68.89099400000001,-33.067233,0 -68.89143300000001,-33.067233,0 -68.89143300000001,-33.067235,0 -68.89099400000001,-33.067233,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-68.89143300000001,-33.067235,0 -68.895929,-33.067251,0 -68.903278,-33.067026,0 -68.90858900000001,-33.06619,0 -68.908911,-33.068726,0 -68.91215099999999,-33.067871,0 -68.913674,-33.083883,0 -68.886123,-33.082696,0 -68.885273,-33.073616,0 -68.89116,-33.072735,0 -68.89143300000001,-33.067235,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>LUNLUNTA</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.820398,-33.01712,0 -68.828292,-33.026782,0 -68.829302,-33.029732,0 -68.83089099999999,-33.035363,0 -68.82114900000001,-33.037287,0 -68.815119,-33.034931,0 -68.814046,-33.029984,0 -68.81545199999999,-33.017894,0 -68.820398,-33.01712,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>ANDREU</name>
+			<styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							-68.86433340000001,-33.0143349,0 -68.8563509,-33.014901,0 -68.8590509,-33.023696,0 -68.85235590000001,-33.024344,0 -68.8412639,-33.019114,0 -68.84177990000001,-33.017123,0 -68.8442909,-33.01599,0 -68.8421659,-33.007641,0 -68.84172890000001,-33.006468,0 -68.8437029,-33.00609,0 -68.8479299,-33.005119,0 -68.8561479,-33.00501,0 -68.8599461,-33.0053349,0 -68.8626715,-33.007134,0 -68.86433340000001,-33.0143349,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

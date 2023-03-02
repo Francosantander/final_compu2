@@ -4,4 +4,4 @@ Situarse en dentro de la carpeta en el directorio /src
 
 Instalar requirements.txt
 
-Ejecutar el comando "python3 server.py -p <puerto a utilizar> -s <tamaño de bloque a leer>"
+Ejecutar el comando "/bin/python3 server.py -p <puerto a utilizar>"

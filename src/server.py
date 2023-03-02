@@ -5,7 +5,7 @@ from index import generar_index
 import datetime as dt
 import asyncio
 import array
-from kml import read_kml, verify_coverage
+from kml import process_kml
 
 routes = web.RouteTableDef()
 
@@ -34,8 +34,8 @@ async def post_handler(request):
             data = clean_comments(data)
             # Guardo el archivo en el server
             output = open(abspath+file_name, "wb", os.O_CREAT)
-            imagen_nueva = array.array('b', data)
-            imagen_nueva.tofile(output)
+            kml = array.array('b', data)
+            kml.tofile(output)
             output.close()
     except:
         #Obtengo los datos del formulario para validar cobertura
@@ -46,9 +46,8 @@ async def post_handler(request):
             i = i.split('=')
             form[i[0]] = i[1]
         #Valido cobertura
-        # Terminar de aplicar hilos
-        kml = read_kml(abspath + form["file"])
-        result = verify_coverage(kml, form["lt"], form["lg"])
+        abspath = os.getcwd() + "/files/"
+        result = process_kml(abspath, float(form["lt"]), float(form["lg"]))
         if len(result) != 0:
             print("You have coverage")
             print(result)
@@ -77,4 +76,4 @@ app = web.Application()
 app.add_routes(routes)
 app.router.add_static("/", "./")
 # Cambiar la ipv6 por la de la pc
-web.run_app(app, host=["192.168.100.23", "::1"], port=args.port)
+web.run_app(app, host=["localhost", "::1"], port=args.port)

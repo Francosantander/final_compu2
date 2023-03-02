@@ -30,26 +30,19 @@ def generar_index(abspath):
                 <br/>
                 <form method="post" enctype="text/plain">
                     <div>
-                        <label for="file">File</label>
-                        <input
-                        type="text"
-                        id="file"
-                        name="file"
-                         />
-                         <br/>
-                         <label for="lt">LT</label>
-                        <input
-                        type="text"
-                        id="lt"
-                        name="lt"
-                         />
-                         <br/>
-                         <label for="lg">LG</label>
-                        <input
-                        type="lg"
-                        id="lg"
-                        name="lg"
-                         />
+                        <label for="lt">LT</label>
+                            <input
+                            type="text"
+                            id="lt"
+                            name="lt"
+                            />
+                            <br/>
+                        <label for="lg">LG</label>
+                            <input
+                            type="lg"
+                            id="lg"
+                            name="lg"
+                            />
                     </div>
                     <br/>
                     <div>
