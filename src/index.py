@@ -3,7 +3,7 @@ import os
 
 
 def generar_index(abspath):
-    html = "<!DOCTYPE html>\n<html>\n<head><meta charset=\"UTF-8\">\n<title>Index</title>\n</head>\n<body>\n"
+    html = "<!DOCTYPE html>\n<html>\n<head><meta charset=\"UTF-8\">\n<title>Index</title>\n</head>\n<body style='display: grid; justify-content: center;padding-top: 10%;'>\n"
     html += "<h2>Bienvenido al final de compu2</h2>\n"
     path = os.getcwd() + "/files"
     archivos = [obj.name for obj in scandir(path) if obj.is_file()]
