@@ -29,11 +29,11 @@ def argumentos():
     return args
 
 def get_file_type(data):
-    for i in range(data.count(b"name")):
-        inicio = data.find(b"name")
-        fin = data.find(b"kml", inicio + 1)
-        type_file = data[inicio:fin+3]
-    type_file = ((type_file.decode('utf-8').split('"'))[1])
+    for i in range(data.count(b"Content-Type")):
+        inicio = data.find(b"Content-Type")
+        fin = data.find(b"\n", inicio)
+        type_file = data[inicio:fin-1]
+    type_file = ((type_file.decode('utf-8').split(': '))[1])
     return type_file
 
 def get_name_file(data):
@@ -45,9 +45,9 @@ def get_name_file(data):
     return file_name
 
 def clean_comments(data):
-    for i in range(data.count(b"------Web")):
-        inicio = data.find(b"------Web")
-        fin = data.find(b"+xml", inicio + 4)
+    for i in range(data.count(b"------")):
+        inicio = data.find(b"------")
+        fin = data.find(b"+xml", inicio)
         data = data.replace(data[inicio:fin], b"")
     for i in range(data.count(b"+xml")):
         inicio = data.find(b"+xml")

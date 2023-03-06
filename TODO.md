@@ -1,4 +1,2 @@
-- Leer y procesar verificacion de cobertura por bloque
-- Arreglar manejo de errores
 - Mejorar Frontend
 - Dockerizar el proyecto

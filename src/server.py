@@ -7,10 +7,10 @@ import asyncio
 import array
 from kml import process_kml
 
-routes = web.RouteTableDef()
 
 global abspath
 
+routes = web.RouteTableDef()
 
 @routes.get('/')
 @routes.get('/index.html')
@@ -23,37 +23,53 @@ async def hello(request):
 async def post_handler(request):
     abspath = os.getcwd() + "/files/"
     data = await request.read()
-    # Con hilos podria obtener el nombre, otro que limpie la cabecera y por ultimo limpie el footer.
-    try:
-        # Obtengo el tipo de formulario pasado en el post
-        type_file = get_file_type(data)
-        if type_file == "kml":
+    # Obtengo el tipo de formulario pasado en el post
+    content_type = request.content_type
+    if content_type == "multipart/form-data":
+        if request.content_length > 225:
             # Obtengo el nombre del archivo
-            file_name=get_name_file(data)
-            # Limpio los comentarios que tiene el archivo
-            data = clean_comments(data)
-            # Guardo el archivo en el server
-            output = open(abspath+file_name, "wb", os.O_CREAT)
-            kml = array.array('b', data)
-            kml.tofile(output)
-            output.close()
-    except:
+            file_type = get_file_type(data)
+            if file_type == "application/vnd.google-earth.kml+xml": 
+                file_name=get_name_file(data)
+                # Limpio los comentarios que tiene el archivo
+                data = clean_comments(data)
+                # Guardo el archivo en el server
+                output = open(abspath+file_name, "wb", os.O_CREAT)
+                kml = array.array('b', data)
+                kml.tofile(output)
+                output.close()
+            else:
+                print("El servidor solo acepta archivos del tipo .kml")
+        else:
+            print("El archivo ingresado no puede ser un archivo vacio")
+    else:
         #Obtengo los datos del formulario para validar cobertura
         data = await request.text()
         data = data.splitlines()
         form = {}
+        error = False
         for i in data:
             i = i.split('=')
-            form[i[0]] = i[1]
+            if i[1] != "":
+                try:
+                    form[i[0]] = float(i[1])
+                    error = False
+                except ValueError:
+                    print("El campo ingresado debe ser del tipo de coma flotante")
+                    error = True
+            else:
+                print("El campo " + i[0] + " es obligatorio")
+                error = True
         #Valido cobertura
-        abspath = os.getcwd() + "/files/"
-        result = process_kml(abspath, float(form["lt"]), float(form["lg"]))
-        if len(result) != 0:
-            print("You have coverage")
-            print(result)
-            print('\n')
-        else:
-            print("You don't have coverage")
+        if error != True:
+            abspath = os.getcwd() + "/files/"
+            result = process_kml(abspath, form["lt"], form["lg"])
+            if len(result) != 0:
+                print("You have coverage")
+                print(result)
+                print('\n')
+            else:
+                print("You don't have coverage")
 
     abspath = os.getcwd()
     generar_index(abspath)

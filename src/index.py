@@ -39,7 +39,7 @@ def generar_index(abspath):
                             <br/>
                         <label for="lg">LG</label>
                             <input
-                            type="lg"
+                            type="text"
                             id="lg"
                             name="lg"
                             />
