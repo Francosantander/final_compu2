@@ -1,6 +1,0 @@
-geopandas
-fiona
-shapely
-aiohttp
-asyncio
-array

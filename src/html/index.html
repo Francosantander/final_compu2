@@ -1,51 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8">
+<link rel='stylesheet' type='text/css' href='../assets/css/index.css'>
 <title>Index</title>
 </head>
-<body style='display: grid; justify-content: center;padding-top: 10%;'>
-<h2>Bienvenido al final de compu2</h2>
-<li><a href="files/Cobertura Wireless.kml">Cobertura Wireless.kml</a></li>
-<li><a href="files/internet copy.kml">internet copy.kml</a></li>
-<li><a href="files/internet copy 3.kml">internet copy 3.kml</a></li>
-<li><a href="files/internet copy 2.kml">internet copy 2.kml</a></li>
-<li><a href="files/internet.kml">internet.kml</a></li>
- <br/>
-                <br/>
-                <form method="post" enctype="multipart/form-data">
-                    <div>
-                        <label for="kml">Choose file to upload</label>
-                        <input
-                        type="file"
-                        id="kml"
-                        name="kml"
-                        accept=".kml" />
-                    </div>
-                    <br/>
-                    <div>
-                        <button>Submit</button>
-                    </div>
-                </form> <br/>
-                <br/>
-                <form method="post" enctype="text/plain">
-                    <div>
-                        <label for="lt">LT</label>
-                            <input
-                            type="text"
-                            id="lt"
-                            name="lt"
-                            />
-                            <br/>
-                        <label for="lg">LG</label>
-                            <input
-                            type="text"
-                            id="lg"
-                            name="lg"
-                            />
-                    </div>
-                    <br/>
-                    <div>
-                        <button>Submit</button>
-                    </div>
-                </form></body>
+<body>
+<div class='answer-container'>
+	<h2>Geocoverage</h2>
+<div class='answer-coverage'>
+<h2>Sorry! You don't have coverage</h2>
+<h4>
+</h4></div>
+<br/>
+<a href='http://localhost:5000/'>
+<button class='go-back-button'> Go Back </button>
+</a>
+</div>
+</body>
 </html>

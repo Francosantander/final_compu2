@@ -1,7 +1,7 @@
 from aiohttp import web
 import os
 from functions import argumentos, get_file_type, get_name_file, clean_comments
-from index import generar_index
+from index import generar_index_0, generar_index_1, generar_index_2, generar_index_3, generar_index_4, generar_index_5
 import datetime as dt
 import asyncio
 import array
@@ -17,9 +17,12 @@ routes = web.RouteTableDef()
 async def hello(request):
     addr = request.transport.get_extra_info('peername')
     asyncio.create_task(generar_logs(addr[0], addr[1]))
+    abspath = os.getcwd()
+    generar_index_0(abspath)
     return web.FileResponse(f"/{abspath}/html/index.html")
 
 @routes.post('/')
+@routes.post('/index.html')
 async def post_handler(request):
     abspath = os.getcwd() + "/files/"
     data = await request.read()
@@ -38,10 +41,14 @@ async def post_handler(request):
                 kml = array.array('b', data)
                 kml.tofile(output)
                 output.close()
+                abspath = os.getcwd()
+                generar_index_0(abspath)
             else:
-                print("El servidor solo acepta archivos del tipo .kml")
+                abspath = os.getcwd()
+                generar_index_1(abspath)
         else:
-            print("El archivo ingresado no puede ser un archivo vacio")
+            abspath = os.getcwd()
+            generar_index_2(abspath)
     else:
         #Obtengo los datos del formulario para validar cobertura
         data = await request.text()
@@ -55,24 +62,28 @@ async def post_handler(request):
                     form[i[0]] = float(i[1])
                     error = False
                 except ValueError:
-                    print("El campo ingresado debe ser del tipo de coma flotante")
+                    abspath = os.getcwd()
+                    generar_index_3(abspath)
                     error = True
             else:
-                print("El campo " + i[0] + " es obligatorio")
+                abspath = os.getcwd()
+                generar_index_4(abspath)
                 error = True
         #Valido cobertura
         if error != True:
             abspath = os.getcwd() + "/files/"
             result = process_kml(abspath, form["lt"], form["lg"])
             if len(result) != 0:
-                print("You have coverage")
-                print(result)
-                print('\n')
+                text = "Congratulation!!! You have coverage "
+                print(text)
+                abspath = os.getcwd()
+                generar_index_5(abspath, text, result)
             else:
-                print("You don't have coverage")
+                text = "Sorry! You don't have coverage"
+                print(text)
+                abspath = os.getcwd()
+                generar_index_5(abspath, text, result)
 
-    abspath = os.getcwd()
-    generar_index(abspath)
     return web.FileResponse(f"/{abspath}/html/index.html")
 
 
@@ -87,9 +98,8 @@ async def generar_logs(ip, port):
 abspath = os.getcwd()
 args = argumentos()
 # path = os.getcwd()
-generar_index(abspath)
+generar_index_0(abspath)
 app = web.Application()
 app.add_routes(routes)
 app.router.add_static("/", "./")
-# Cambiar la ipv6 por la de la pc
-web.run_app(app, host=["localhost", "::1"], port=args.port)
+web.run_app(app, host=["0.0.0.0"], port=5000)

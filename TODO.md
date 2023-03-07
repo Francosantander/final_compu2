@@ -1,2 +1,2 @@
-- Mejorar Frontend
-- Dockerizar el proyecto
+- Poder eliminar KML
+- Poder subir otros tipos de archivos y validar cobertura unicamente en archivos kml

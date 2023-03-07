@@ -1,0 +1,116 @@
+body{
+    background-image: url("../img/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 95%;
+    display: grid;
+    justify-content: flex-end;
+    padding-top: 5%;
+    margin-left: -15%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.home-container{
+    background-color: #212529;
+    padding: 5% 10% 20% 10%;
+    border-radius: 6px;
+    width: 150%;
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+.kml-list{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 2% 5% 5% 5%;
+    box-shadow: 5%;
+}
+
+.form-file-input{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 5% 0% 5% 0%;
+    justify-content: center;
+    display: grid;
+}
+
+.form-file-input label{
+    margin-left: 15%;
+    font-size: 1.25rem;
+}
+
+.form-file-input button{
+    margin-left: 30%;
+    background-color: #28a745;
+    border-radius: 6px;
+    height: 2vw;
+    width: 5vw;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.form-file-input input{
+    font-size: 1rem;
+}
+
+.form-coordinates-input{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 5% 0% 5% 0%;
+    justify-content: center;
+    display: grid;
+}
+
+.form-coordinates-input label{
+    margin-left: 10%;
+    font-size: 1.25rem;
+}
+
+.form-coordinates-input button{
+    margin-left: 30%;
+    background-color: #28a745;
+    border-radius: 6px;
+    height: 2vw;
+    width: 5vw;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.form-coordinates-input input{
+    font-size: 1rem;
+}
+
+.error-type-file{
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+}
+
+.answer-container{
+    background-color: #212529;
+    padding: 5% 10% 20% 10%;
+    border-radius: 6px;
+    width: 80%;
+}
+
+.answer-coverage h2{
+    padding-top: 5%;
+    color: #212529;
+}
+
+.answer-coverage{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 0% 5% 5% 5%;
+}
+
+a .go-back-button{
+    margin-left: 35%;
+    background-color: #28a745;
+    border-radius: 6px;
+    height: 2.5vw;
+    width: 6vw;
+    font-size: 1rem;
+    color: #ffffff;
+}
